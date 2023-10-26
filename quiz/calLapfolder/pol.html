@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Chemistry Quiz</title>
+    <link rel="stylesheet" href="allqu.css">
+</head>
+<body>
+    <header>
+        <h1>Phase equilibria</h1>
+    </header>
+
+
+   
+
+<main >
+        <section id="Q" class="Question">
+            <form id="quiz-form">
+            <section class="one">  
+        <h2 class="unit-title">Q 1: Cellulode is actually made of ?</h2>
+            
+            <input type="radio" id="option11" name="option1" value="glucose">
+                glucose<br>
+            <input type="radio" id="option12" name="option1" value="amino acids">
+                amino acids<br>        <!--  to kon hai wo kon hai are aur koi nhi balki name pe dependend hai saari baate apko bas try karna hai ki app sabka same name rakho warna hamesha apke saare radio select ho jaya karen ge and in the case of check of checkbox uka to case hi alag hai kyuki usko to banaya hi isliye gaya hai taki aap ek ya ek se jada option select karr payen and rahi baat for ki to uska utna kuch bada use mujhe to abhi nhi lagta hai -->
+            <input type="radio" id="option13" name="option1" value="nylon6">
+                 nylon6<br>
+            <input type="radio" id="option14" name="option1" value="nylon66">
+            nylon66<br>
+            </section>
+            <section class="two">        
+        <h2 class="unit-title">Q 2: Silk is made up of ?</h2>
+           
+            <input type="radio" id="option21" name="option2" value="water">
+                water<br>
+            <input type="radio" id="option22" name="option2" value="amino acids">
+            amino acids<br>        <!--  to kon hai wo kon hai are aur koi nhi balki name pe dependend hai saari baate apko bas try karna hai ki app sabka same name rakho warna hamesha apke saare radio select ho jaya karen ge and in the case of check of checkbox uka to case hi alag hai kyuki usko to banaya hi isliye gaya hai taki aap ek ya ek se jada option select karr payen and rahi baat for ki to uska utna kuch bada use mujhe to abhi nhi lagta hai -->
+            <input type="radio" id="option23" name="option2" value="glucose">
+            glucose<br>
+            <input type="radio" id="option24" name="option2" value="gum">
+            gum<br>
+            </section>
+            <section class="three"> 
+        <h2 class="unit-title">Q 3: Polyester is made up of ?</h2>
+                    
+            <input type="radio" id="option31" name="option3"  value="water">
+                water<br>
+            <input type="radio" id="option32" name="option3"  value="ester">
+            ester<br>        <!--  to kon hai wo kon hai are aur koi nhi balki name pe dependend hai saari baate apko bas try karna hai ki app sabka same name rakho warna hamesha apke saare radio select ho jaya karen ge and in the case of check of checkbox uka to case hi alag hai kyuki usko to banaya hi isliye gaya hai taki aap ek ya ek se jada option select karr payen and rahi baat for ki to uska utna kuch bada use mujhe to abhi nhi lagta hai -->
+            <input type="radio" id="option33" name="option3"  value="water">
+                water<br>
+            <input type="radio" id="option34" name="option3"  value="amino acids">
+                amino acids<br>
+                <button type = "submit" style="padding-bottom:29px" id="butt_on">Submit</button>
+            </form>                
+            <div id="result">Result</div>
+            </section>
+        </section>  
+        
+        
+</main>
+<footer>
+    <p>&copy; Engineering Chemistry Uni-Prep Learning</p>
+</footer>
+<script>
+const quizForm = document.getElementById("quiz-form");
+const score = [];
+quizForm.addEventListener("submit", function(event){
+    event.preventDefault();
+
+    //getting users response
+    const answer1 = quizForm.querySelector('input[name="option1"]:checked').value;
+    const answer2 = quizForm.querySelector('input[name="option2"]:checked').value;
+    const answer3 = quizForm.querySelector('input[name="option3"]:checked').value;
+    //check the user's answer against the correct answer.
+    {if(answer1==="glucose"){
+        //lets store the mark in a var
+        score.push(1);
+        console.log("Correct!");
+    }
+
+    else{
+        score.push(0);
+        console.log("Incorrect");
+    }}
+
+    {if(answer2==="amino acids"){
+        //lets store the mark in a var
+        score.push(1);
+        console.log("Correct!");
+    }
+
+    else{
+        score.push(0);
+        console.log("Incorrect");
+    }}
+    
+    { if(answer3==="ester"){
+        score.push(1);
+        console.log("Correct!");
+    }
+
+    else{
+        score.push(0);
+        console.log("Incorrect");
+    }}
+   
+
+    console.log(score);
+
+    console.log(score[0]+score[1]+score[2]);
+
+    let totalScore= score[0] + score[1] + score[2];
+    result.innerHTML = `Your score is ${totalScore} out of 3.`;
+   
+});
+</script>       
+</body>
+</html>
