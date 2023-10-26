@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming</title>
+   <link rel="stylesheet" href="DSA.css">
+</head>
+<body>
+    <header>
+        <h1>Python Programming</h1>
+    </header>
+
+
+   
+
+<main >
+    <section id="unit1" class="unit">
+        <a href ="py/unit1.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 1: Course Module 1</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>A Brief History of Python</li>
+            <li>Different Versions</li>
+            <li>Python 2 vs Python 3</li>
+            <li>Installing Python</li>
+            <li>Environment Variables</li>
+            <li>Executing Python from the Command Line</li>
+            <li>Editing Python Files</li>
+            <li>String Values</li>
+            <li>String Operators</li>
+            <li>Numeric Data
+                Types Conversions</li>
+            <li>Simple Input and Output</li>
+            <li>Language
+                components</li>
+            <li>Control Flow structures and Syntax</li>
+            <li>Relational
+                Operators</li>
+            <li>Logical Operators</li>
+            <li>Bit Wise Operators</li>
+            <li>Python for
+                Windows</li>
+        </ul> -->
+    </section>
+
+    <section id="unit2" class="unit">
+        <a href ="py/unit2.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 2: Course Module 2</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Conditions</li>
+            <li>boolean logic</li>
+            <li>logical operators</li>
+            <li>ranges</li>
+            <li>Control
+                statements
+                <li>if-else</li>
+                <li>loops</li>
+                <li>Flow control</li>
+                <li>Functions</li>
+                <li>Scoping</li>
+                <li>Exceptions</li>
+                <li>Input and output</li>
+                <li>Modules</li>
+            </li>
+            <li>Collections
+                <li>Lists</li>
+                <li>Tuples</li>
+                <li>Sets</li>
+                <li>Dictionaries</li>
+                <li>Modules</li>
+            </li>
+            <li>Standard Modules</li>
+            <li>Regular Expressions</li>
+            <li>Quantifiers</li>
+            <li>Basic String Operations</li>
+                
+        </ul> -->
+    </section>
+    <section id="unit3" class="unit">
+        <a href ="py/unit3.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 3: Course Module 3</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Principles of Object Orientation</li>
+            <li>Classes in Python</li>
+            <li>Creating
+                Classes</li>
+            <li>Instance Methods</li>
+            <li>Access Specification</li>
+            <li>data modeling</li>
+            <li>persistent storage of objects</li>
+            <li>inheritance</li>
+            <li>polymorphism</li>
+            <li>operator
+                overloading</li>
+            <li>abstract classes</li>
+            <li>exception handling</li>
+            <li>try block</li>
+        </ul> -->
+    </section>
+
+    <section id="unit4" class="unit">
+        <a href ="py/unit4.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 4: Course Module 4</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>File Handling</li>
+            <li>Writing Data to a File</li>
+            <li>Reading Data From a File -
+                Additional File Methods
+                <li>Using Pipes as Data Streams</li>
+                <li>Handling IO Exceptions</li>
+                <li>Working with Directories</li>
+                <li>Metadata</li>
+                <li>File Organization</li>
+            </li>
+           
+            <li>Database Programming
+                <li>Generic Database Connectivity using ODBC</li>
+                <li>Postgres connection in Python</li>
+                <li>MySQL connection in Python</li>
+            </li>
+        </ul> -->
+    </section>
+
+    <section id="unit5" class="unit">
+        <a href ="py/unit5.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 5: Course Module 5</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Graphical user interfaces,</li>
+            <li>event-driven programming paradigm</li>
+            <li>tkinter module</li>
+            <li>creating simple GUI</li>
+            <li>buttons</li>
+            <li>labels</li>
+            <li>entry fields</li>
+            <li>dialogs</li>
+            <li>widget attributes - sizes, fonts, colors layouts</li>
+            <li>nested frames</li>
+            <li>Multithreading</li>
+            <li>Networks</li>
+            <li>Client/Server Programming</li>
+            <li>introduction to HTML</li>
+            <li>interacting with remote HTML server</li>
+            <li>running html-based queries</li>
+            <li>downloading pages</li>
+            <li>CGI programming, programming a simple CGI form</li>
+        </ul> -->
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Data Applied Numerical Methods E-Learning</p>
+    </footer>
+    <script>
+        // Get all unit elements with class "unit"
+        const units = document.querySelectorAll(".unit");
+    
+        // Add click event listeners to each unit title
+        units.forEach(unit => {
+            const unitTitle = unit.querySelector(".unit-title");
+    
+            unitTitle.addEventListener("click", () => {
+                // Find the sub-topics element associated with the clicked unit
+                const subTopics = unit.querySelector(".sub-topics");
+    
+                // Toggle the display of sub-topics
+                if (subTopics.style.display === "none" || subTopics.style.display === "") {
+                    subTopics.style.display = "block";
+                } else {
+                    subTopics.style.display = "none";
+                }
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>

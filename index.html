@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+<link rel="stylesheet" href="dash.css">
+</head>
+<body>
+
+
+  <button id="hamburger" class="openbtn" onclick="openNav()">
+    <div>
+      <div class="line two"></div>
+      <div class="line three"></div>
+      <div class="line one"></div>
+    </div>
+</button>
+    
+    
+<!-- <nav class="navbar">
+    <li class="logout"><a href="https://jha-2022.github.io/Project-sem3-homepage/" style="text-decoration: none;color:black">Log Out</a></li>
+    <li class="proavt"><a href="#profile"><img src="img/profilepic.jpg" height="35px"></a></li>
+</nav> -->
+
+
+<div id="mySidebar" class="sidebar sidebox">
+  <h2>Uniprep</h2>
+  <ul>
+  <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+  <li><a href="quiz/quizHomePage.html" style="font-size:18px">Quiz</a></li>
+  <div class="box"></div>
+  <!-- <li><a href="https://drive.google.com/drive/folders/1IvpK-grM5cIW82YSHTs_jbPfOYS9tAXk?usp=sharing" style="font-size:18px">Previous year paper</a></li> -->
+  <!-- <div class="box"></div> -->
+  <li><a href="contact.html" style="font-size:18px">Contact</a></li>
+  <div class="box"></div>
+  </ul>  
+</div>
+
+<div id="main" >
+  <div id="body">
+    <div class="date-container">
+        <div class="date" id ="tareek"></div>
+        <div class="day" id="din"></div>         
+        <div class="month" id="mahina"></div>
+        <div class="tutorials">Subjects</div>       
+  </div>
+
+
+<div class="container">
+<div class="container1" style="font-size: small;">
+    <div class="anm">
+        <a href="ANM.html"><img src="img/calculator.png" alt="" class="maths"></a>
+        <a href="ANM.html" style="text-decoration:none;color:black"><div class="text1">Applied Numerical Methods</div></a>
+    </div>
+   
+    <div class="dsa">
+    <a href="DSA.html"><img src="img/connection.png" alt="" class="Dalgo"></a>        
+    <a href="DSA.html" style="text-decoration:none;color:black"><div class="text1">Data Structure & Algorithm</div></a>
+    </div>
+
+    <div class="chem">
+        <a href="Engineering_chem.html"><img src="img/laboratory.png" alt="" class="Chemistry"></a>
+        <a href="Engineering_chem.html" style="text-decoration:none;color:black"><div class="text3">Engineering Chemistry</div></a>
+    </div>
+</div>
+
+<div class="container2">
+    <div class="eee">
+        <a href="eee.html"><img src="img/electrical-circuit.png" alt="" class="ecs"></a>
+        <a href="eee.html" style="text-decoration:none;color:black"><div class="text4">Electrical Circuits and Systems</div></a>
+    </div>
+    
+    <div class="cal">
+        <a href="manage.html"><img src="img/management.png" alt="" class="calLaplace"></a>
+        <a href="manage.html" style="text-decoration:none;color:black"><div class="text5" >Principal of Management and Organisational Behaviour</div></a>
+    </div>
+    
+    
+    <div class="pye">
+        <a href="PythonEssentials.html"><img src="img/python.png" alt="" class="pythess"></a>
+        <a href="PythonEssentials.html" style="text-decoration:none;color:black"><div class="text5">Python Essentials</div></a>
+    </div> 
+</div>
+</div>
+
+<script>
+  window.embeddedChatbotConfig = {
+  chatbotId: "XmD9vTeU1yfCOhlfaYo6Q",
+  domain: "www.chatbase.co"
+  }
+  </script>
+  <script
+  src="https://www.chatbase.co/embed.min.js"
+  chatbotId="XmD9vTeU1yfCOhlfaYo6Q"
+  domain="www.chatbase.co"
+  defer>
+  </script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
+

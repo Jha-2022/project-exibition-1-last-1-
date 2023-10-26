@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures and Algorithms</title>
+    <link rel="stylesheet" href="DSA.css">
+</head>
+<body>
+    <header>
+        <h1>Data Structures and Algorithms</h1>
+    </header>
+
+
+   
+
+<main >
+    <section id="unit1" class="unit">
+        <a href="dsa/unit1.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 1: Introduction to Algorithm and Data Structures</h2></a>
+        <!-- <ul class="sub-topics">
+            
+            <li>Classification of Data Structures</li>
+            <li>Abstract Data Types(ADT)</li>
+        </ul> -->
+    </section>
+
+    <section id="unit2" class="unit">
+        <a href="dsa/unit2.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 2: Sorting and Searching</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Brute Force Approach: General Method- Sorting(Bubble, Selection, Insertion)</li>
+            <li>Searching(Sequential, Linear)</li>
+            <li>Divide And Conquer Approach: General Method:Sorting(Merge, Quick)</li>
+            <li>Searching: Binary Search</li>
+        </ul> -->
+    </section>
+    <section id="unit3" class="unit">
+        <a href="dsa/unit3.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 3: List, Stack and Queue ADT</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Linked List: Array Vs linked List</li>
+            <li>Singly Linked List, Doubly Linked list</li>
+            <li>Circular linked list</li>
+            <li>Implementation</li>
+            <li>Applications</li>
+            <li>Stack and Queue: Introduction</li>
+            <li>Implementation(Static and Dynamic)</li>
+            <li>Circular Queue</li>
+            <li>Application</li>
+        </ul> -->
+    </section>
+
+    <section id="unit4" class="unit">
+        <a href="dsa/unit4.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 4: Trees And Hashing</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Linear Vs Non-Linear Data Structures</li>
+            <li>General Tree</li>
+            <li>Terminologies</li>
+            <li>Binary Tree</li>
+            <li>Expression Tree</li>
+            <li>Traversals</li>
+            <li>Binary Search Tree</li>
+            <li>AVL Tree</li>
+            <li>Red-Black Tree</li>
+            <li>Splay Tree</li>
+            <li>B Tree</li>
+            <li>Hashing Introduction</li>
+            <li>Hash Function</li>
+            <li>Methods-Collision Resolution</li>
+        </ul> -->
+    </section>
+
+    <section id="unit5" class="unit">
+        <a href="dsa/unit5.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 5: Graph ADT</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Graph:Introduction</li>
+            <li>Representations</li>
+            <li>Traversals</li>
+            <li>Topological Sorting</li>
+            <li>Connected and Bi-Connected Components</li>
+            <li>Articulation Point</li>
+            <li>Shortest Path Algorithms(Dijkstra's and Floyd's Algorithms)</li>
+            <li>Minimum spanning tree(Prim's and Kruskal's Algorithms)</li>
+        </ul> -->
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Data Structures and Algorithms E-Learning</p>
+    </footer>
+    <script>
+        // Get all unit elements with class "unit"
+        const units = document.querySelectorAll(".unit");
+    
+        // Add click event listeners to each unit title
+        units.forEach(unit => {
+            const unitTitle = unit.querySelector(".unit-title");
+    
+            unitTitle.addEventListener("click", () => {
+                // Find the sub-topics element associated with the clicked unit
+                const subTopics = unit.querySelector(".sub-topics");
+    
+                // Toggle the display of sub-topics
+                if (subTopics.style.display === "none" || subTopics.style.display === "") {
+                    subTopics.style.display = "block";
+                } else {
+                    subTopics.style.display = "none";
+                }
+            });
+        });
+    </script>
+    
+    
+    </body>
+</html>

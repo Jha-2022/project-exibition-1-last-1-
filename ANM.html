@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied Numerical Methods</title>
+   <link rel="stylesheet" href="DSA.css">
+</head>
+<body>
+    <header>
+        <h1>Applied Numerical Methods</h1>
+    </header>
+
+
+   
+
+<main >
+    <section id="unit1" class="unit">
+        <a href="ANM/unit1.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 1: Course Module 1</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Gauss Elimination</li>
+            <li>Thomas Algorithm for tridiagonal linear system of equations</li>
+            <li>Gauss-Seidel iteration method</li>
+            <li>Diagonal dominance and convergence of Gauss-Seidel iteration method</li>
+        </ul> -->
+    </section>
+
+    <section id="unit2" class="unit">
+        <a href="ANM/unit2.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 2: Course Module 2</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Introduction to Direct and Iterative methods</li>
+            <li>(Fixed point) Iteration method</li>
+            <li>order and condition of convergence</li>
+            <li>Secant and Newton-Raphson methods for simple roots</li>
+            <li>Rates of Convergence</li>
+        </ul> -->
+    </section>
+    <section id="unit3" class="unit">
+        <a href="ANM/unit3.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 3: Course Module 3</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Finite difference operators: Forward, Backward, Central, Average, Shift and
+                Differential</li>
+            <li>Relation between these difference operators</li>
+            <li>Interpolation</li>
+            <li>Newton's forward and backward Interpolations</li>
+            <li>Lagrange Interpolation</li>
+            <li>Newton's Divided Difference Interpolation</li>
+            <li>Cubic spline interpolation for a tabulated function with equally spaced data</li>
+        </ul> -->
+    </section>
+
+    <section id="unit4" class="unit">
+        <a href="ANM/unit4.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 4: Course Module 4</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Derivatives using Newton's Forward and Backward interpolations</li>
+            <li>Newton-Cotes Quadrature rule</li>
+            <li>Trapezoidal rule, Simpson's 1/3 and 3/8 rules</li>
+            <li>Gaussian Quadrature rule</li>
+            <li>Two point and three point Gauss-Legendre quadrature rules</li>
+            <li>Composite quadrature rules</li>
+            <li>Romberg method</li>
+        </ul> -->
+    </section>
+
+    <section id="unit5" class="unit">
+        <a href="ANM/unit5.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 5: Course Module 5</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>First order initial value problems</li>
+            <li>Taylor's Series method</li>
+            <li>Euler's method</li>
+            <li>Modified Euler's method</li>
+            <li>Runge-Kutta method of fourth order</li>
+            <li>Adams-Bashforth predictor-corrector method</li>
+            <li>Finite difference method for second order boundary value problems</li>
+            <li>Classification of second order linear partial differential equations</li>
+            <li>Finite difference method</li>
+            <li>Explicit and Implicit methods</li>
+            <li>Schmidt and Crank-Nicolson methods for 1-D heat equation</li>
+            <li>Explicit method for 1-D wave equation</li>
+            <li>Liebmann's iteration method for 2-D Laplace and Poisson equations</li>
+        </ul> -->
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Data Applied Numerical Methods E-Learning</p>
+    </footer>
+    <script>
+        // Get all unit elements with class "unit"
+        const units = document.querySelectorAll(".unit");
+    
+        // Add click event listeners to each unit title
+        units.forEach(unit => {
+            const unitTitle = unit.querySelector(".unit-title");
+    
+            unitTitle.addEventListener("click", () => {
+                // Find the sub-topics element associated with the clicked unit
+                const subTopics = unit.querySelector(".sub-topics");
+    
+                // Toggle the display of sub-topics
+                if (subTopics.style.display === "none" || subTopics.style.display === "") {
+                    subTopics.style.display = "block";
+                } else {
+                    subTopics.style.display = "none";
+                }
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>

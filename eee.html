@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Circuits and Systems</title>
+   <link rel="stylesheet" href="DSA.css">
+</head>
+<body>
+    <header>
+        <h1>Electronic Circuits and Systems</h1>
+    </header>
+
+   
+
+<main >
+    <section id="unit1" class="unit">
+        <a href="eee/unit1.html"><h2 class="unit-title">Unit 1: Course Module 1: Electric Circuits:</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Ohm's law</li>
+            <li>voltage and current divisions rule -
+                Kirchhoff's</li>
+            <li>Current and Voltage laws</li>
+            <li>Series & parallel circuits</li>
+            <li>Star-Delta
+                conversion</li>
+            <li>Loop and Nodal Analysis</li>
+            <li>Network Theorems for circuits with
+                dependent and independent sources</li>
+            <li>AC Circuit Analysis & Phasors: RL</li>
+            <li>RLC</li>
+            <li>Series and parallel</li>
+            <li>Resonance</li>
+        </ul> -->
+    </section>
+
+    <section id="unit2" class="unit">
+        <a href="eee/unit2.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 2: Course Module 2: Transient Analysis & Magnetic Circuits:</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Natural and forced responses in First order and Second order systems</li>
+            <li>Analogy between electric and magnetic circuits</li>
+            <li>Series and parallel
+                magnetic circuits</li>
+            <li>Electromagnetic Self and mutual induction</li>
+            <li>Applications of
+                Magnetism. Problems magnetic circuits</li>
+        </ul> -->
+    </section>
+    <section id="unit3" class="unit">
+        <a href="eee/unit3.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 3: Course Module 3: Electrical Machines:</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>DC Machines</li>
+            <li>1Ø and 3Ø Induction motors</li>
+            <li>1Ø and 3Ø phase transformers</li>
+        </ul> -->
+    </section>
+
+    <section id="unit4" class="unit">
+        <a href="eee/unit4.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 4: Course Module 4: Semiconductor Devices</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Construction and operation with characteristics of PN junction diode</li>
+            <li>Half-wave and Full-wave Rectifiers</li>
+            <li>Construction and operation with characteristics of Zener Diode</li>
+            <li>Zener Regulator</li>
+            <li>BJT - Configuration-Characteristics</li>
+            <li>Amplifier</li>
+            <li>Power Electronic Devices: SCR & MOSFET</li>
+        </ul> -->
+    </section>
+
+    <section id="unit5" class="unit">
+        <a href="eee/unit5.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 5: Course Module 5: Digital and Logical Systems:</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Logic gates & Universal Gates</li>
+            <li>Arithmetic circuits</li>
+            <li>MUX/DEMUX, Decoder/ Encoder</li>
+            <li>Sequential Circuits: Flip-flops, Counters & Shift-registers</li>
+        </ul> -->
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Data Applied Numerical Methods E-Learning</p>
+    </footer>
+    <script>
+        // Get all unit elements with class "unit"
+        const units = document.querySelectorAll(".unit");
+    
+        // Add click event listeners to each unit title
+        units.forEach(unit => {
+            const unitTitle = unit.querySelector(".unit-title");
+    
+            unitTitle.addEventListener("click", () => {
+                // Find the sub-topics element associated with the clicked unit
+                const subTopics = unit.querySelector(".sub-topics");
+    
+                // Toggle the display of sub-topics
+                if (subTopics.style.display === "none" || subTopics.style.display === "") {
+                    subTopics.style.display = "block";
+                } else {
+                    subTopics.style.display = "none";
+                }
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>

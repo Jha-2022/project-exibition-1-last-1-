@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Chemistry</title>
+    <link rel="stylesheet" href="DSA.css">
+</head>
+<body>
+    <header>
+        <h1>Engineering Chemistry</h1>
+    </header>
+
+
+   
+
+<main >
+    <section id="unit1" class="unit">
+        <a href="Echem/unit1.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 1: Types of impurities in water</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Types of Hardness in boiler water. Alkalinity of water and its estimation</li>
+            <li>Estimation of hardness by EDTA method-Numerical problems</li>
+            <li>Scale, Sludge, Reasons for the formation of scale and Removal</li>
+            <li>Boiler water purification by ion-exchange resin method. Specifications for 
+                potable water</li>
+            <li>Drinking water treatment</li>
+            <li>Disinfection by chlorination, ozonisation and UV treatment</li>
+            <li>Sea water to drinking water conversion -Reverse osmosis & its significance</li>
+        </ul> -->
+    </section>
+
+    <section id="unit2" class="unit">
+        <a href="Echem/unit2.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 2: Phase equilibria</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Gibbs phase rule, definition of terms with examples</li>
+            <li>One Component Systems- water and carbon dioxide systems - Reduced phase rule</li>
+            <li>Two Component eutectic System: lead-silver systems</li>
+            <li>Alloys: Introduction- Definition- Properties of alloys- Significance of alloying</li>
+            <li>Ferrous alloys- Nichrome and Stainless steel</li>
+        </ul> -->
+    </section>
+    <section id="unit3" class="unit">
+        <a href="Echem/unit3.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 3: Electrochemistry - Corrosion</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Introduction to Electrochemical reactions</li>
+            <li>Redox-reactions</li>
+            <li>Nernst equation; Problem solving using Nernst equation</li>
+            <li>Standard Reduction Potentials; Cell potentials and Free Energy</li>
+            <li>Types and Mechanism of corrosion</li>
+            <li>Galvanic Corrosion</li>
+            <li>Determination of spontaneity of Corrosion,Relationship between 
+                corrosion and entropy, enthalpy and free energy</li>
+            <li>Corrosion prevention; Cathodic protection - sacrificial
+                anodic and impressed current protection methods; Electrolysiselectroplating-
+                process and typical applications, metal cladding;
+                Coating processes - PVD and CVD and applications</li>
+        </ul> -->
+    </section>
+
+    <section id="unit4" class="unit">
+        <a href="Echem/unit4.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 4: Energy conversion and storage</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Fuel cells - Electrochemistry of
+                a H2-O2 fuel cell</li>
+            <li>Basics of solid oxide fuel cells-applications</li>
+            <li>Limitations of Batteries</li>
+            <li>Batteries- Chemical change and Electrical Work</li>
+            <li>Electrochemical reactions</li>
+            <li>Primary cells:Lechlanche, alkaline and Li-primary cells</li>
+            <li>Secondary cells - Lead-acid, Ni-Cd, Ni-MH cells</li>
+            <li>Rechargeable lithium cells - LiCoO2 and LiC6 chemistry and applications</li>
+        </ul> -->
+    </section>
+
+    <section id="unit5" class="unit">
+        <a href="Echem/unit5.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 5: Energy sources</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Fuels-Definition. Calorific value - Definition of LCV, HCV. Measurement of calorific value using bomb and Boy’s
+                calorimeter- problem solving</li>
+            <li>Coal analysis-proximate and ultimate analysis and significance</li>
+            <li>Stoichiometric combustion reactions of C, CH4 etc</li>
+            <li>Calculation of minimum quantity of air by volume and by 
+                weight-Numerical problems</li>
+            <li>Knocking and chemical structure, octane number and cetane 
+                number and their importance</li>
+            <li>Alternate fuels and Fuel additives</li>
+            <li>Biodieselsynthesis,advantages and commercial applications</li>
+        </ul> -->
+    </section>
+
+    <section id="unit6" class="unit">
+        <a href="Echem/unit6.html" style="text-decoration: none; color:black;"><h2 class="unit-title">Unit 6: Industrial and Conducting polymers</h2></a>
+        <!-- <ul class="sub-topics">
+            <li>Introduction to Polymers- Classification</li>
+            <li>Types of Polymerization (Chain & Step growth)</li>
+            <li>Properties and engineering applications of BS, PVC,
+                PMMA, PET, Teflon and Bakelite</li>
+            <li>Compression, injection,extrusion, Transfer moulding 
+                methods of plastics</li>
+            <li>Fiber reinforced composites - Properties and applications 
+                in automobiles and aerospace</li>
+            <li>Second Law of thermodynamics and entropy in
+                recycling of plastics like PMMA</li>
+            <li>Introduction to metallic conductors</li>
+            <li>Conducting polymers: Polyacetylene and Polyaniline</li>
+            <li>Mechanism of Conduction, doping, Electrical characterization,
+                applications of conducting polymers in semiconductor field</li>
+
+        </ul> -->
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Data Structures and Algorithms E-Learning</p>
+    </footer>
+    <script>
+        // Get all unit elements with class "unit"
+        const units = document.querySelectorAll(".unit");
+    
+        // Add click event listeners to each unit title
+        units.forEach(unit => {
+            const unitTitle = unit.querySelector(".unit-title");
+    
+            unitTitle.addEventListener("click", () => {
+                // Find the sub-topics element associated with the clicked unit
+                const subTopics = unit.querySelector(".sub-topics");
+    
+                // Toggle the display of sub-topics
+                if (subTopics.style.display === "none" || subTopics.style.display === "") {
+                    subTopics.style.display = "block";
+                } else {
+                    subTopics.style.display = "none";
+                }
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>
