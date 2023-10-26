@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Chemistry Quiz</title>
+    <link rel="stylesheet" href="allqu.css">
+</head>
+<body>
+    <header>
+        <h1>Types of impurities in water</h1>
+    </header>
+
+
+   
+
+<main >
+        <section id="Q" class="Question">
+            <form id="quiz-form">
+            <section class="one">  
+        <h2 class="unit-title">Q 1: Which sentence from among the folllowing is true for hardwater</h2>
+            
+            <input type="radio" id="option11" name="option1" value="Does not produces lather with soap.">
+                Does not produces lather with soap.<br>
+            <input type="radio" id="option12" name="option1" value="Does not supress the cleaning action of soap.">
+                Does not supress the cleaning action of soap.<br>        <!--  to kon hai wo kon hai are aur koi nhi balki name pe dependend hai saari baate apko bas try karna hai ki app sabka same name rakho warna hamesha apke saare radio select ho jaya karen ge and in the case of check of checkbox uka to case hi alag hai kyuki usko to banaya hi isliye gaya hai taki aap ek ya ek se jada option select karr payen and rahi baat for ki to uska utna kuch bada use mujhe to abhi nhi lagta hai -->
+            <input type="radio" id="option13" name="option1" value="Produces lather with soap.">
+                Produces lather with soap.<br>
+            <input type="radio" id="option14" name="option1" value="does not require excess material and time.">
+                does not require excess material and time.<br>
+            </section>
+            <section class="two">        
+        <h2 class="unit-title">Q 2: In HOT LIM0E-SODA water is treated with softening chemicals at a temperature of ________ .</h2>
+           
+            <input type="radio" id="option21" name="option2" value="90 to 100℃">
+                90 to 100℃<br>
+            <input type="radio" id="option22" name="option2" value="20 to 50℃">
+                20 to 50℃<br>        <!--  to kon hai wo kon hai are aur koi nhi balki name pe dependend hai saari baate apko bas try karna hai ki app sabka same name rakho warna hamesha apke saare radio select ho jaya karen ge and in the case of check of checkbox uka to case hi alag hai kyuki usko to banaya hi isliye gaya hai taki aap ek ya ek se jada option select karr payen and rahi baat for ki to uska utna kuch bada use mujhe to abhi nhi lagta hai -->
+            <input type="radio" id="option23" name="option2" value="30 to 80℃">
+                30 to 80℃<br>
+            <input type="radio" id="option24" name="option2" value="1000 to 2000℃">
+                1000 to 2000℃<br>
+            </section>
+            <section class="three"> 
+        <h2 class="unit-title">Q 3: How can we remove the sludge?</h2>
+                    
+            <input type="radio" id="option31" name="option3"  value="By using Soft water.">
+                By using Soft water.<br>
+            <input type="radio" id="option32" name="option3"  value="By decreasing the efficiency of the boilers.">
+                By decreasing the efficiency of the boilers.<br>        <!--  to kon hai wo kon hai are aur koi nhi balki name pe dependend hai saari baate apko bas try karna hai ki app sabka same name rakho warna hamesha apke saare radio select ho jaya karen ge and in the case of check of checkbox uka to case hi alag hai kyuki usko to banaya hi isliye gaya hai taki aap ek ya ek se jada option select karr payen and rahi baat for ki to uska utna kuch bada use mujhe to abhi nhi lagta hai -->
+            <input type="radio" id="option33" name="option3"  value="Removed by scrapping off with a brush.">
+                Removed by scrapping off with a brush.<br>
+            <input type="radio" id="option34" name="option3"  value="By using more and more impure Water.">
+                By using more and more impure Water.<br>
+                <button type = "submit" style="padding-bottom:29px" id="butt_on">Submit</button>
+            </form>                
+            <div id="result">Result</div>
+            </section>
+        </section>  
+        
+        
+</main>
+<footer>
+    <p>&copy; Engineering Chemistry Uni-Prep Learning</p>
+</footer>
+<script>
+const quizForm = document.getElementById("quiz-form");
+const score = [];
+quizForm.addEventListener("submit", function(event){
+    event.preventDefault();
+
+    //getting users response
+    const answer1 = quizForm.querySelector('input[name="option1"]:checked').value;
+    const answer2 = quizForm.querySelector('input[name="option2"]:checked').value;
+    const answer3 = quizForm.querySelector('input[name="option3"]:checked').value;
+    //check the user's answer against the correct answer.
+    {if(answer1==="Does not produces lather with soap."){
+        //lets store the mark in a var
+        score.push(1);
+        console.log("Correct!");
+    }
+
+    else{
+        score.push(0);
+        console.log("Incorrect");
+    }}
+
+    {if(answer2==="90 to 100℃"){
+        //lets store the mark in a var
+        score.push(1);
+        console.log("Correct!");
+    }
+
+    else{
+        score.push(0);
+        console.log("Incorrect");
+    }}
+    
+    { if(answer3==="Removed by scrapping off with a brush."){
+        score.push(1);
+        console.log("Correct!");
+    }
+
+    else{
+        score.push(0);
+        console.log("Incorrect");
+    }}
+   
+
+    console.log(score);
+
+    console.log(score[0]+score[1]+score[2]);
+
+    let totalScore= score[0] + score[1] + score[2];
+    result.innerHTML = `Your score is ${totalScore} out of 3.`;
+   
+});
+    </script>
+    
+    
+</body>
+</html>
