@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Chemistry Quiz</title>
+    <link rel="stylesheet" href="EChemquiz.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz: Engineering Chemistry</h1>
+    </header>
+
+
+   
+
+<main >
+    <section id="unit1" class="unit">
+        <h2 class="unit-title"><a href="EChemQFolder/impinwater.html">Unit 1: Types of impurities in water</a></h2>
+    </section>
+
+    <section id="unit2" class="unit">
+        <h2 class="unit-title"><a href="EChemQFolder/phaseeq.html">Unit 2: Phase equilibria</a></h2>
+
+    </section>
+    <section id="unit3" class="unit">
+        <h2 class="unit-title"><a href="EChemQFolder/corrosi.html">Unit 3: Electrochemistry - Corrosion</a></h2>
+
+    </section>
+
+    <section id="unit4" class="unit">
+        <h2 class="unit-title"><a href="#">Unit 4: Energy conversion and storage</a></h2>
+  
+    </section>
+
+    <section id="unit5" class="unit">
+        <h2 class="unit-title"><a href="#">Unit 5: Energy sources</a></h2>
+
+    </section>
+
+    <section id="unit6" class="unit">
+        <h2 class="unit-title"><a href="EChemQFolder/pol.html">Unit 6: Industrial and Conducting polymers</a></h2>
+
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2023 Data Structures and Algorithms E-Learning</p>
+    </footer>
+    <script>
+        // Get all unit elements with class "unit"
+        const units = document.querySelectorAll(".unit");
+    
+        // Add click event listeners to each unit title
+        units.forEach(unit => {
+            const unitTitle = unit.querySelector(".unit-title");
+    
+            unitTitle.addEventListener("click", () => {
+                // Find the sub-topics element associated with the clicked unit
+                const subTopics = unit.querySelector(".sub-topics");
+    
+                // Toggle the display of sub-topics
+                if (subTopics.style.display === "none" || subTopics.style.display === "") {
+                    subTopics.style.display = "block";
+                } else {
+                    subTopics.style.display = "none";
+                }
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>

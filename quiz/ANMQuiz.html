@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied Numerical Methods</title>
+   <link rel="stylesheet" href="EChemquiz.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz: Applied Numerical Methods</h1>
+    </header>
+
+
+   
+
+<main >
+    <section id="unit1" class="unit">
+        <h2 class="unit-title"><a href="AnmQuizFolder/module1.html">Unit 1: Course Module 1</a></h2>
+
+    </section>
+
+    <section id="unit2" class="unit">
+        <h2 class="unit-title"><a href="AnmQuizFolder/module2.html">Unit 2: Course Module 2</a></h2>
+ 
+    </section>
+    <section id="unit3" class="unit">
+        <h2 class="unit-title"><a href="AnmQuizFolder/module3.html">Unit 3: Course Module 3</a></h2>
+     
+    </section>
+
+    <section id="unit4" class="unit">
+        <h2 class="unit-title"><a href="AnmQuizFolder/module4.html">Unit 4: Course Module 4</a></h2>
+    
+    </section>
+
+    <section id="unit5" class="unit">
+        <h2 class="unit-title"><a href="AnmQuizFolder/module5.html">Unit 5: Course Module 5</a></h2>
+     
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Data Applied Numerical Methods E-Learning</p>
+    </footer>
+    <script>
+        // Get all unit elements with class "unit"
+        const units = document.querySelectorAll(".unit");
+    
+        // Add click event listeners to each unit title
+        units.forEach(unit => {
+            const unitTitle = unit.querySelector(".unit-title");
+    
+            unitTitle.addEventListener("click", () => {
+                // Find the sub-topics element associated with the clicked unit
+                const subTopics = unit.querySelector(".sub-topics");
+    
+                // Toggle the display of sub-topics
+                if (subTopics.style.display === "none" || subTopics.style.display === "") {
+                    subTopics.style.display = "block";
+                } else {
+                    subTopics.style.display = "none";
+                }
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>
