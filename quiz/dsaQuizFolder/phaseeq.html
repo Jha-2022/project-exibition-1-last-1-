@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Chemistry Quiz</title>
+    <link rel="stylesheet" href="allqu.css">
+</head>
+<body>
+    <header>
+        <h1>Phase equilibria</h1>
+    </header>
+
+
+   
+
+<main >
+        <section id="Q" class="Question">
+            <form id="quiz-form">
+            <section class="one">  
+        <h2 class="unit-title">Q 1: In phase rule  F=C-P+2  P stands for ?</h2>
+            
+            <input type="radio" id="option11" name="option1" value="Number of phases.">
+                Number of phases.<br>
+            <input type="radio" id="option12" name="option1" value="Number Of components.">
+                Number Of components.<br>        <!--  to kon hai wo kon hai are aur koi nhi balki name pe dependend hai saari baate apko bas try karna hai ki app sabka same name rakho warna hamesha apke saare radio select ho jaya karen ge and in the case of check of checkbox uka to case hi alag hai kyuki usko to banaya hi isliye gaya hai taki aap ek ya ek se jada option select karr payen and rahi baat for ki to uska utna kuch bada use mujhe to abhi nhi lagta hai -->
+            <input type="radio" id="option13" name="option1" value="Degree of freedom.">
+                Degree of freedom.<br>
+            <input type="radio" id="option14" name="option1" value="Gibbs free energy.">
+                Gibbs free energy.<br>
+            </section>
+            <section class="two">        
+        <h2 class="unit-title">Q 2: Example of binary component system.</h2>
+           
+            <input type="radio" id="option21" name="option2" value="Potassium Iodide and Water">
+                Potassium Iodide and Water<br>
+            <input type="radio" id="option22" name="option2" value="Silver and water">
+                Silver and water<br>        <!--  to kon hai wo kon hai are aur koi nhi balki name pe dependend hai saari baate apko bas try karna hai ki app sabka same name rakho warna hamesha apke saare radio select ho jaya karen ge and in the case of check of checkbox uka to case hi alag hai kyuki usko to banaya hi isliye gaya hai taki aap ek ya ek se jada option select karr payen and rahi baat for ki to uska utna kuch bada use mujhe to abhi nhi lagta hai -->
+            <input type="radio" id="option23" name="option2" value="Gold and Water">
+                Gold and Water<br>
+            <input type="radio" id="option24" name="option2" value="Copper and Water">
+                Copper and Water<br>
+            </section>
+            <section class="three"> 
+        <h2 class="unit-title">Q 3: What is Triple Point of Water?</h2>
+                    
+            <input type="radio" id="option31" name="option3"  value="Ponit where all the three stages of water exists at the same time.">
+                Ponit where all the three stages of water exists at the same time.<br>
+            <input type="radio" id="option32" name="option3"  value="Point where ice and water exits together.">
+                Point where ice and water exits together.<br>        <!--  to kon hai wo kon hai are aur koi nhi balki name pe dependend hai saari baate apko bas try karna hai ki app sabka same name rakho warna hamesha apke saare radio select ho jaya karen ge and in the case of check of checkbox uka to case hi alag hai kyuki usko to banaya hi isliye gaya hai taki aap ek ya ek se jada option select karr payen and rahi baat for ki to uska utna kuch bada use mujhe to abhi nhi lagta hai -->
+            <input type="radio" id="option33" name="option3"  value="Point where water ice and fire exits together.">
+                Point where water ice and fire exits together.<br>
+            <input type="radio" id="option34" name="option3"  value="point where nothing exits.">
+                point where nothing exits.<br>
+                <button type = "submit" style="padding-bottom:29px" id="butt_on">Submit</button>
+            </form>                
+            <div id="result">Result</div>
+            </section>
+        </section>  
+        
+        
+</main>
+<footer>
+    <p>&copy; Engineering Chemistry Uni-Prep Learning</p>
+</footer>
+<script>
+const quizForm = document.getElementById("quiz-form");
+const score = [];
+quizForm.addEventListener("submit", function(event){
+    event.preventDefault();
+
+    //getting users response
+    const answer1 = quizForm.querySelector('input[name="option1"]:checked').value;
+    const answer2 = quizForm.querySelector('input[name="option2"]:checked').value;
+    const answer3 = quizForm.querySelector('input[name="option3"]:checked').value;
+    //check the user's answer against the correct answer.
+    {if(answer1==="Number of phases."){
+        //lets store the mark in a var
+        score.push(1);
+        console.log("Correct!");
+    }
+
+    else{
+        score.push(0);
+        console.log("Incorrect");
+    }}
+
+    {if(answer2==="Potassium Iodide and Water"){
+        //lets store the mark in a var
+        score.push(1);
+        console.log("Correct!");
+    }
+
+    else{
+        score.push(0);
+        console.log("Incorrect");
+    }}
+    
+    { if(answer3==="Ponit where all the three stages of water exists at the same time."){
+        score.push(1);
+        console.log("Correct!");
+    }
+
+    else{
+        score.push(0);
+        console.log("Incorrect");
+    }}
+   
+
+    console.log(score);
+
+    console.log(score[0]+score[1]+score[2]);
+
+    let totalScore= score[0] + score[1] + score[2];
+    result.innerHTML = `Your score is ${totalScore} out of 3.`;
+   
+});
+</script>       
+</body>
+</html>
